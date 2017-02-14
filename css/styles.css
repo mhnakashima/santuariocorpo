@@ -1,0 +1,91 @@
+/*
+ * Start Bootstrap - Business Frontpage (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+/* line 7, ../scss/styles.scss */
+body {
+  font-family: 'Ubuntu',sans-serif;
+  padding-top: 50px;
+  /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+/* line 12, ../scss/styles.scss */
+.navbar {
+  background-color: #fff;
+  border-bottom: 2px solid #A5D2CB;
+  min-height: 120px;
+  padding-top: 10px;
+}
+
+/* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
+/* line 21, ../scss/styles.scss */
+.business-header {
+  height: 400px;
+  background: url("http://placehold.it/1920x400") center center no-repeat scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+/* line 39, ../scss/styles.scss */
+.business-headerPage {
+  margin-top: 90px;
+}
+
+/* line 44, ../scss/styles.scss */
+.services .services--row {
+  margin-bottom: 50px;
+}
+/* line 48, ../scss/styles.scss */
+.services .services--row .card {
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  height: 190px;
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  -o-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease;
+}
+/* line 67, ../scss/styles.scss */
+.services .services--row .card:hover {
+  -webkit-filter: grayscale(0%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+}
+/* line 73, ../scss/styles.scss */
+.services .services--row .services--title {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+/* line 81, ../scss/styles.scss */
+.tagline {
+  color: #888;
+  font: 22px 'Ubuntu',sans-serif;
+  text-transform: uppercase;
+}
+
+/* line 87, ../scss/styles.scss */
+.img-center {
+  margin: 0 auto;
+}
+
+/* line 91, ../scss/styles.scss */
+footer {
+  margin: 50px auto 15px auto;
+  text-align: center;
+}
+/* line 95, ../scss/styles.scss */
+footer p {
+  margin: 0;
+}
