@@ -4,16 +4,40 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+ @import "_variables";
+
 body {
-    font-family: 'Ubuntu',sans-serif;
-    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    font-family: 'PT Sans',sans-serif;
 }
 
 .navbar{
-    background-color: #fff;
-    border-bottom: 2px solid #A5D2CB;
-    min-height: 120px;    
-    padding-top: 10px;
+    background-color: transparent;
+    border: none;
+    min-height: 130px;    
+    padding-top: 5px;
+
+    .navbar-nav{
+        a{
+            &:hover{
+                color: $primaryColor !important;
+            }
+        }
+    }
+
+    .navbar-header{
+        
+        float: initial;
+        margin-top: 15px;
+        text-align: center;
+
+        .logo{
+            margin: 0 auto;
+        }
+    }
+
+    &.isFixed{
+        box-shadow: 0 2px 3px 0 rgba(0,0,0,0.2);
+    }
 }
 
 /* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
@@ -52,6 +76,7 @@ body {
             -moz-background-size: cover;
             background-size: cover;
             -o-background-size: cover;
+            cursor: pointer;
             height: 190px;
             
             -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
@@ -71,8 +96,24 @@ body {
         }
 
         .services--title{
-            font-size: 18px;
+            color: #888;
+            font-size: 16px;
             text-transform: uppercase;
+        }
+
+        .services--item{
+            p{
+                color: #888;
+                text-decoration: none;                
+            }
+
+            &:hover{
+                text-decoration: none;
+
+                p{
+                    color: #888;
+                }
+            }
         }
     }
 }
@@ -80,7 +121,7 @@ body {
 
 .tagline {
     color: #888;
-    font: 22px 'Ubuntu',sans-serif;
+    font: 18px 'PT Sans',sans-serif;
     text-transform: uppercase;
 }
 
@@ -94,5 +135,19 @@ footer {
 
     p{
         margin: 0;
+    }
+}
+
+/* =Custom */
+.page{
+    .btn-default{
+
+        font-size: 14px;
+
+        &:hover{
+            background-color: $mainBackgroundColor;
+            border: none;
+            color: #fff;
+        }
     }
 }

@@ -3,23 +3,39 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
-/* line 7, ../scss/styles.scss */
+/* line 9, ../scss/styles.scss */
 body {
-  font-family: 'Ubuntu',sans-serif;
-  padding-top: 50px;
-  /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+  font-family: 'PT Sans',sans-serif;
 }
 
-/* line 12, ../scss/styles.scss */
+/* line 13, ../scss/styles.scss */
 .navbar {
-  background-color: #fff;
-  border-bottom: 2px solid #A5D2CB;
-  min-height: 120px;
-  padding-top: 10px;
+  background-color: transparent;
+  border: none;
+  min-height: 130px;
+  padding-top: 5px;
+}
+/* line 21, ../scss/styles.scss */
+.navbar .navbar-nav a:hover {
+  color: #0f0 !important;
+}
+/* line 27, ../scss/styles.scss */
+.navbar .navbar-header {
+  float: initial;
+  margin-top: 15px;
+  text-align: center;
+}
+/* line 33, ../scss/styles.scss */
+.navbar .navbar-header .logo {
+  margin: 0 auto;
+}
+/* line 38, ../scss/styles.scss */
+.navbar.isFixed {
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
-/* line 21, ../scss/styles.scss */
+/* line 45, ../scss/styles.scss */
 .business-header {
   height: 400px;
   background: url("http://placehold.it/1920x400") center center no-repeat scroll;
@@ -29,22 +45,23 @@ body {
   -o-background-size: cover;
 }
 
-/* line 39, ../scss/styles.scss */
+/* line 63, ../scss/styles.scss */
 .business-headerPage {
   margin-top: 90px;
 }
 
-/* line 44, ../scss/styles.scss */
+/* line 68, ../scss/styles.scss */
 .services .services--row {
   margin-bottom: 50px;
 }
-/* line 48, ../scss/styles.scss */
+/* line 72, ../scss/styles.scss */
 .services .services--row .card {
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  cursor: pointer;
   height: 190px;
   -webkit-filter: grayscale(100%);
   /* Safari 6.0 - 9.0 */
@@ -56,36 +73,62 @@ body {
   -o-transition: .5s ease-in-out;
   transition: .5s ease;
 }
-/* line 67, ../scss/styles.scss */
+/* line 92, ../scss/styles.scss */
 .services .services--row .card:hover {
   -webkit-filter: grayscale(0%);
   /* Safari 6.0 - 9.0 */
   filter: grayscale(0%);
 }
-/* line 73, ../scss/styles.scss */
+/* line 98, ../scss/styles.scss */
 .services .services--row .services--title {
-  font-size: 18px;
+  color: #888;
+  font-size: 16px;
   text-transform: uppercase;
 }
+/* line 105, ../scss/styles.scss */
+.services .services--row .services--item p {
+  color: #888;
+  text-decoration: none;
+}
+/* line 110, ../scss/styles.scss */
+.services .services--row .services--item:hover {
+  text-decoration: none;
+}
+/* line 113, ../scss/styles.scss */
+.services .services--row .services--item:hover p {
+  color: #888;
+}
 
-/* line 81, ../scss/styles.scss */
+/* line 122, ../scss/styles.scss */
 .tagline {
   color: #888;
-  font: 22px 'Ubuntu',sans-serif;
+  font: 18px 'PT Sans',sans-serif;
   text-transform: uppercase;
 }
 
-/* line 87, ../scss/styles.scss */
+/* line 128, ../scss/styles.scss */
 .img-center {
   margin: 0 auto;
 }
 
-/* line 91, ../scss/styles.scss */
+/* line 132, ../scss/styles.scss */
 footer {
   margin: 50px auto 15px auto;
   text-align: center;
 }
-/* line 95, ../scss/styles.scss */
+/* line 136, ../scss/styles.scss */
 footer p {
   margin: 0;
+}
+
+/* =Custom */
+/* line 143, ../scss/styles.scss */
+.page .btn-default {
+  font-size: 14px;
+}
+/* line 147, ../scss/styles.scss */
+.page .btn-default:hover {
+  background-color: #68A4C4;
+  border: none;
+  color: #fff;
 }
