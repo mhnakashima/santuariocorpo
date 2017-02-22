@@ -6,148 +6,37 @@
 
  @import "_variables";
 
+ html{
+    font-size: 16px;
+ }
+
 body {
-    font-family: 'PT Sans',sans-serif;
+    //font-family: 'PT Sans',sans-serif;
+    font-size: 62.5%;
 }
 
-.navbar{
-    background-color: transparent;
-    border: none;
-    min-height: 130px;    
-    padding-top: 5px;
-
-    .navbar-nav{
-        a{
-            &:hover{
-                color: $primaryColor !important;
-            }
-        }
-    }
-
-    .navbar-header{
-        
-        float: initial;
-        margin-top: 15px;
-        text-align: center;
-
-        .logo{
-            margin: 0 auto;
-        }
-    }
-
-    &.isFixed{
-        box-shadow: 0 2px 3px 0 rgba(0,0,0,0.2);
+body.homepage{
+    #header{
+        height: 100vh;
+        min-height: 40em;
     }
 }
 
-/* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
-
-.business-header {
-    height: 400px;
-    background: url('http://placehold.it/1920x400') center center no-repeat scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
+#header{
+    position: relative;
+    background-image: url(../images/header.png);
     background-size: cover;
-    -o-background-size: cover;
-}
-
-
-.main{
-
-}
-
-.page{
-
-}
-
-.business-headerPage{
-    margin-top: 90px;
-}
-
-.services{
-    .services--row{
-        
-        margin-bottom: 50px;
-        
-        .card{
-            
-            background-repeat: no-repeat;            
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            background-size: cover;
-            -o-background-size: cover;
-            cursor: pointer;
-            height: 190px;
-            
-            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-            -o-filter: grayscale(100%); 
-            -moz-filter: grayscale(100%); 
-            filter: grayscale(100%);
-
-            -webkit-transition: .5s ease-in-out;
-            -moz-transition: .5s ease-in-out;
-            -o-transition: .5s ease-in-out;
-            transition: .5s ease;
-
-            &:hover{
-                -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-                filter: grayscale(0%);
-            }
-        }
-
-        .services--title{
-            color: #888;
-            font-size: 16px;
-            text-transform: uppercase;
-        }
-
-        .services--item{
-            p{
-                color: #888;
-                text-decoration: none;                
-            }
-
-            &:hover{
-                text-decoration: none;
-
-                p{
-                    color: #888;
-                }
-            }
-        }
-    }
-}
-
-
-.tagline {
-    color: #888;
-    font: 18px 'PT Sans',sans-serif;
-    text-transform: uppercase;
-}
-
-.img-center {
-    margin: 0 auto;
-}
-
-footer {
-    margin: 50px auto 15px auto;
+    background-position: center center;
+    /*background-attachment: fixed;*/
+    color: #fff;
     text-align: center;
-
-    p{
-        margin: 0;
-    }
+    padding: 7.5em 0 2em 0;
+    cursor: default;
 }
 
-/* =Custom */
-.page{
-    .btn-default{
+.page-wrapper{
 
-        font-size: 14px;
-
-        &:hover{
-            background-color: $mainBackgroundColor;
-            border: none;
-            color: #fff;
-        }
+    &.outerColor{
+        background-color: #f0f4f4;
     }
 }
