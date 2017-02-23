@@ -15,23 +15,34 @@ body {
     font-size: 62.5%;
 }
 
-body.homepage{
-    #header{
-        height: 100vh;
-        min-height: 40em;
+body{
+    &.homepage{
+        #header{
+            height: 80vh;
+            min-height: 40em;
+        }
     }
 }
 
 #header{
-    position: relative;
-    background-image: url(../images/header.png);
+    background-image: url(../images/slide01.jpg);
     background-size: cover;
-    background-position: center center;
-    /*background-attachment: fixed;*/
-    color: #fff;
-    text-align: center;
-    padding: 7.5em 0 2em 0;
+    background-position: center center;    
+    color: #fff;    
     cursor: default;
+    padding: 7.5em 0 2em 0;
+    position: relative;
+    text-align: center;
+    z-index: 1;    
+}
+
+.overlay{
+    background-image: url(../images/overlay.png);
+    background-repeat: repeat;
+    height: 80vh;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
 }
 
 .page-wrapper{
