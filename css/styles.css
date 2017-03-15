@@ -4008,6 +4008,12 @@
   fill: #34b8c0;
 }
 
+/* line 6, ../scss/_general.scss */
+.bg-white {
+  background: #fff;
+  fill: #fff;
+}
+
 /* line 11, ../scss/styles.scss */
 html {
   font-size: 16px;
@@ -4074,49 +4080,51 @@ body {
   text-align: center;
 }
 
-/* line 88, ../scss/styles.scss */
+/* line 89, ../scss/styles.scss */
 .logo {
   background-image: url(../images/logo_dark.png);
   background-position: center center;
   background-repeat: no-repeat;
-  height: 320px;
+  height: 400px;
   margin: 1rem auto;
-  width: 320px;
+  width: 400px;
 }
 
-/* line 97, ../scss/styles.scss */
+/* line 98, ../scss/styles.scss */
 #mainMenu {
   display: inline-block;
   margin: 0 auto;
+  margin-top: 10px;
   padding: 0px;
   text-align: center;
 }
-/* line 104, ../scss/styles.scss */
+/* line 106, ../scss/styles.scss */
 #mainMenu li {
-  display: inline-block;
-  float: left;
+  display: inline;
+  margin: 0 10px;
 }
-/* line 108, ../scss/styles.scss */
+/* line 109, ../scss/styles.scss */
 #mainMenu li a {
   border-bottom: 0px;
   color: #fff;
-  font-family: 'Raleway', 'sans-serif';
+  font-family: 'Oswald', 'sans-serif';
   font-size: 1.6em;
-  margin-left: 15px;
+  font-weight: lighter;
   padding-bottom: 5px;
   position: relative;
   text-decoration: none;
+  text-transform: uppercase;
 }
-/* line 118, ../scss/styles.scss */
+/* line 120, ../scss/styles.scss */
 #mainMenu li a:before {
   content: '\f107';
   font-family: "FontAwesome";
   padding-right: 5px;
 }
-/* line 124, ../scss/styles.scss */
+/* line 126, ../scss/styles.scss */
 #mainMenu li a:after {
   background-color: #79BAB4;
-  bottom: -5px;
+  bottom: 1px;
   content: "";
   display: block;
   height: 3px;
@@ -4125,93 +4133,161 @@ body {
   width: 0;
   transition: width 0.2s;
 }
-/* line 138, ../scss/styles.scss */
+/* line 141, ../scss/styles.scss */
+#mainMenu li a:hover:before {
+  display: inline-block;
+}
+/* line 145, ../scss/styles.scss */
 #mainMenu li a:hover:after {
   width: 100%;
 }
 
-/* line 146, ../scss/styles.scss */
+/* line 153, ../scss/styles.scss */
+.mainFixedMenuScroller {
+  background-color: #153854;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0.2rem 0;
+  position: fixed;
+  opacity: 0;
+  top: -48px;
+  width: 100%;
+  z-index: 1000;
+  -webkit-transition: all 0.5 ease;
+  transition: all 0.5s ease;
+}
+/* line 168, ../scss/styles.scss */
+.mainFixedMenuScroller .holderLogo {
+  padding: 15px;
+}
+/* line 172, ../scss/styles.scss */
+.mainFixedMenuScroller.show {
+  opacity: 1;
+  top: 0px;
+}
+/* line 177, ../scss/styles.scss */
+.mainFixedMenuScroller .logo {
+  background-image: url(../images/logo_dark_fixed.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0px;
+  height: 40px;
+  width: 50px;
+}
+/* line 188, ../scss/styles.scss */
+.mainFixedMenuScroller #mainMenu li a {
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* line 196, ../scss/styles.scss */
 .divider {
   height: 4px;
   margin: 2.5rem auto;
   width: 80px;
 }
 
-/* line 153, ../scss/styles.scss */
+/* line 203, ../scss/styles.scss */
 .card > img {
   max-width: 100%;
 }
-/* line 158, ../scss/styles.scss */
+/* line 208, ../scss/styles.scss */
 .card .header > .pageTitle {
   margin: 1rem 0;
 }
 
-/* line 164, ../scss/styles.scss */
+/* line 214, ../scss/styles.scss */
 img {
   border: 3px solid #fff;
 }
 
-/* line 168, ../scss/styles.scss */
+/* line 218, ../scss/styles.scss */
 .btn {
   border: none;
 }
 
 /* =Sections */
 /* =news */
-/* line 177, ../scss/styles.scss */
+/* line 227, ../scss/styles.scss */
 .news .card {
   margin-bottom: 1rem;
 }
 
 /* =aboutUs */
 /* =contactUs */
-/* line 185, ../scss/styles.scss */
+/* line 235, ../scss/styles.scss */
 .contactUs {
   background-color: #fff;
 }
-/* line 190, ../scss/styles.scss */
+/* line 240, ../scss/styles.scss */
 .contactUs .col-sm-4[class^='col-sm'] {
   padding: 0px;
 }
-/* line 197, ../scss/styles.scss */
+/* line 247, ../scss/styles.scss */
 .contactUs .holder:last-child .contactUs--content {
   border: none;
 }
-/* line 203, ../scss/styles.scss */
+/* line 253, ../scss/styles.scss */
 .contactUs .contactUs--content {
   border-right: 1px solid #e0e0e0;
   padding: 2rem 0;
   text-align: center;
 }
-/* line 209, ../scss/styles.scss */
+/* line 259, ../scss/styles.scss */
 .contactUs .contactUs--content > i {
   color: #153854;
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
-/* line 216, ../scss/styles.scss */
+/* line 266, ../scss/styles.scss */
 .contactUs .contactUs--content > h5, .contactUs .contactUs--content address > h5 {
   font-family: "Oswald", sans-serif;
   font-size: 1.2rem;
 }
 
-/* line 226, ../scss/styles.scss */
+/* line 276, ../scss/styles.scss */
 footer.pageFooter {
   background-color: #153854;
   color: #fff;
   font-size: 1rem;
   padding: 2rem 0;
 }
-/* line 233, ../scss/styles.scss */
+/* line 283, ../scss/styles.scss */
 footer.pageFooter .horizontalList li {
   display: inline-block;
   float: left;
   list-style: none;
   margin-right: 10px;
 }
-/* line 240, ../scss/styles.scss */
+/* line 290, ../scss/styles.scss */
 footer.pageFooter .horizontalList li a {
   color: #fff;
   font-size: 1.2rem;
+}
+
+/* =Pages */
+/* line 302, ../scss/styles.scss */
+.page #header {
+  background-image: none;
+  background: linear-gradient(0deg, #153854 0%, #153854 100%);
+  padding: 5em 0;
+}
+/* line 309, ../scss/styles.scss */
+.page #header .holder h1 {
+  display: inline-block;
+  font-family: "Oswald", sans-serif;
+  font-size: 60px;
+  letter-spacing: 0.04em;
+  margin: 10px 0;
+}
+/* line 317, ../scss/styles.scss */
+.page #header .holder .divider {
+  height: 4px;
+  margin: 0px;
+  padding: 0 30px;
+}
+/* line 325, ../scss/styles.scss */
+.page .page-content {
+  padding: 6rem 0;
 }
