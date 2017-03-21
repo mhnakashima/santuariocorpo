@@ -20,7 +20,7 @@
 
 </head>
 
-<body class="page contactUsPage">  
+<body class="page contactUsPage agendaPage">  
 
     <div class="page-wrapper positionRelative">
         
@@ -45,7 +45,7 @@
         <div id="header" class="container-fluid header alignLeft">
             
             <div class="holder">
-                <h1 class="fontUppercase paddingLeft30px paddingRight30px marginBottom20px">Fale Conosco</h1>
+                <h1 class="fontUppercase paddingLeft30px paddingRight30px marginBottom20px">Agende seu horário</h1>
 
                 <hr class="divider bg-white marginLeft30px paddingRight30px" />
             </div>
@@ -60,33 +60,42 @@
             <div class="row">
                 <div class="col-sm-12 col-xs-12">
                     <h2 class="pageTitle">
-                       Entre em contato conosco
+                       Marque sua consulta
                     </h2>
 
                     <hr class="divider bg-primary" />
+
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-sm-12 col-xs-12">
-                    <form id="contactForm" method="POST" action="#" >
-                          <div class="form-group">
-                            <label for="contactName">Nome</label>
-                            <input type="text" class="form-control" id="contactName" name="contactName" placeholder="Nome (ex: Joaquim / Maria)"  required>
-                          </div>
-                          
-                          <div class="form-group">
-                            <label for="contactEmail">Email</label>
-                            <input type="email" id="contactEmail" data-rule-email="true" data-msg-email="Entre com um email válido" class="form-control" name="contactEmail" id="contactEmail" placeholder="Email" required> 
-                          </div>
-                          
-                          <div class="form-group">
-                             <label for="contactMessage">Deixe sua Mensagem</label>
-                             <textarea id="contactMessage" name="contactMessage" class="form-control" rows="5" required ></textarea>
-                          </div>
-
-                          <input class="submit btn btn-default floatRight marginTop15px" type="submit" value="Submit">
+                    <form id="agendeContainerForm" method="POST" action="#" class="agendeContainerForm">
+                      <div class="form-group">
+                          <label for="contactName">Nome</label>
+                          <input type="text" class="form-control" id="contactName" name="contactName" placeholder="Nome (ex: Joaquim / Maria)"  required>
+                        
+                      </div>
                       
+                      <div class="form-group">
+                        <label for="contactEmail">Email</label>
+                        <input type="email" id="contactEmail" data-rule-email="true" data-msg-email="Entre com um email válido" class="form-control" name="contactEmail" id="contactEmail" placeholder="Email" required> 
+                        
+                      </div>
+
+                      <div class="form-group">
+                        <label for="contactPhone">Telefone / Celular</label>
+                        <input type="text" name="contactPhone" class="form-control" id="contactPhone" placeholder="Telefone/Celular - ex: (XX) XXXXX-XXXX">
+                        
+                      </div>                      
+                      
+                      <div class="form-group">
+                         <label for="contactSubject">Mensagem</label>
+                         <textarea id="contactMessage" name="contactMessage" class="form-control" rows="5" required ></textarea>
+                         
+                      </div>
+
+                      <button type="submit" class="btn btn-default floatRight marginTop15px">Enviar</button>
                     </form>
                 </div>
             </div>

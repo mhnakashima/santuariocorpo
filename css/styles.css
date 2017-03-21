@@ -4014,6 +4014,35 @@
   fill: #fff;
 }
 
+/* line 14, ../scss/_general.scss */
+.form-group .form-control {
+  font-family: "lato";
+  font-size: 1.1rem;
+  height: auto;
+  padding: 10px;
+}
+/* line 21, ../scss/_general.scss */
+.form-group .error {
+  color: #843534;
+  font-size: 12px;
+}
+
+/* line 27, ../scss/_general.scss */
+label, button[type="submit"] {
+  font-size: 1rem;
+}
+
+/* line 33, ../scss/_general.scss */
+.owl-carousel .owl-item .card {
+  text-align: center;
+}
+/* line 35, ../scss/_general.scss */
+.owl-carousel .owl-item .card img {
+  margin: 0 auto;
+  max-width: auto;
+  width: auto;
+}
+
 /* line 11, ../scss/styles.scss */
 html {
   font-size: 16px;

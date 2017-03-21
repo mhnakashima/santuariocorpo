@@ -7,3 +7,37 @@
 	background: #fff;
     fill: #fff;	
 }
+
+
+.form-group{
+
+	.form-control{
+		font-family: "lato";
+		font-size: 1.1rem;
+		height: auto;
+		padding: 10px;
+	}	
+
+	.error{
+		color: #843534;
+		font-size: 12px;
+	}
+}
+
+label, button[type="submit"]{
+	font-size: 1rem;
+}
+
+.owl-carousel{
+	.owl-item{
+		.card{
+			text-align: center;
+			img{
+				margin: 0 auto;
+				max-width: auto;
+				width: auto;
+			}
+		}
+	}
+}
+
